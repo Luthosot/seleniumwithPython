@@ -1,0 +1,10 @@
+from selenium import webdriver
+from selenium.webdriver.common.keys import keys
+
+#chrome
+driver=webdriver.Chrome(executable_path="c:\Drivers\chromedriver_32\chromedriver.exe")
+driver.get("https://redrabbit.rebaseventures.com/qa-automation/maintenance")
+
+print(driver.title) #returns the title of the page
+print(driver.current_url) #returns URL of the pag
+driver.close()
